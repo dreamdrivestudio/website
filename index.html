@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DreamDrive Studios – Websites Ready to Sell</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://js.stripe.com/v3/"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{--gold:#D4AF37;--dark:#0B0B0B;--white:#FFFFFF;--gray:#1a1a1a;--gray2:#2a2a2a;--text:#ccc;}
@@ -71,9 +70,8 @@ section{padding:100px 60px;}
 .product-footer{display:flex;align-items:center;justify-content:space-between;margin-top:8px;}
 .product-price{font-family:'Playfair Display',serif;font-size:2em;font-weight:900;color:var(--white);}
 .product-price span{font-size:0.5em;color:#666;font-family:'DM Sans',sans-serif;font-weight:400;}
-.buy-btn{padding:12px 24px;background:var(--gold);color:#000;font-weight:700;border:none;border-radius:4px;cursor:none;font-size:0.88em;transition:all 0.2s;position:relative;overflow:hidden;}
+.buy-btn{padding:12px 24px;background:var(--gold);color:#000;font-weight:700;border:none;border-radius:4px;cursor:pointer;font-size:0.88em;transition:all 0.2s;text-decoration:none;display:inline-block;}
 .buy-btn:hover{background:#e8c84a;transform:translateY(-1px);box-shadow:0 8px 20px rgba(212,175,55,0.3);}
-.buy-btn.loading{opacity:0.7;pointer-events:none;}
 .stripe-note{text-align:center;margin-top:12px;font-size:0.72em;color:#444;}
 .proof{background:var(--gray);text-align:center;}
 .proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:56px;}
@@ -130,12 +128,6 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
 .footer-links a:hover{color:var(--gold);}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.04);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
 .footer-copy{font-size:0.78em;color:#333;}
-.thankyou{display:none;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:80px 40px;}
-.thankyou.active{display:flex;}
-.thankyou-box{max-width:560px;}
-.thankyou-icon{font-size:4em;margin-bottom:24px;}
-.thankyou-title{font-family:'Playfair Display',serif;font-size:2.8em;font-weight:700;margin-bottom:16px;}
-.thankyou-text{color:#666;font-size:1em;line-height:1.8;margin-bottom:32px;}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 .reveal-left{opacity:0;transform:translateX(-30px);transition:opacity 0.7s ease,transform 0.7s ease;}
@@ -173,8 +165,6 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   </ul>
 </nav>
 
-<div id="mainSite">
-
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -187,10 +177,7 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
       <a href="#contact" class="btn-outline">Request Custom Website</a>
     </div>
   </div>
-  <div class="hero-scroll">
-    <div class="scroll-dot"></div>
-    Scroll
-  </div>
+  <div class="hero-scroll"><div class="scroll-dot"></div>Scroll</div>
 </section>
 
 <div class="stats reveal">
@@ -226,9 +213,9 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
         </ul>
         <div class="product-footer">
           <div class="product-price">$499<span> one-time</span></div>
-          <button class="buy-btn" onclick="handleBuy(this,'fitness','499')">Buy Now</button>
+          <a class="buy-btn" href="https://www.paypal.com/paypalme/dreamdriveweb/499" target="_blank">Buy Now</a>
         </div>
-        <div class="stripe-note">🔒 Secure payment powered by Stripe</div>
+        <div class="stripe-note">🔒 Secure payment powered by PayPal</div>
       </div>
     </div>
     <div class="product-card reveal">
@@ -245,9 +232,9 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
         </ul>
         <div class="product-footer">
           <div class="product-price">$299<span> one-time</span></div>
-          <button class="buy-btn" onclick="handleBuy(this,'restaurant','299')">Buy Now</button>
+          <a class="buy-btn" href="https://www.paypal.com/paypalme/dreamdriveweb/299" target="_blank">Buy Now</a>
         </div>
-        <div class="stripe-note">🔒 Secure payment powered by Stripe</div>
+        <div class="stripe-note">🔒 Secure payment powered by PayPal</div>
       </div>
     </div>
     <div class="product-card reveal">
@@ -264,9 +251,9 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
         </ul>
         <div class="product-footer">
           <div class="product-price">$349<span> one-time</span></div>
-          <button class="buy-btn" onclick="handleBuy(this,'business','349')">Buy Now</button>
+          <a class="buy-btn" href="https://www.paypal.com/paypalme/dreamdriveweb/349" target="_blank">Buy Now</a>
         </div>
-        <div class="stripe-note">🔒 Secure payment powered by Stripe</div>
+        <div class="stripe-note">🔒 Secure payment powered by PayPal</div>
       </div>
     </div>
   </div>
@@ -344,7 +331,7 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   </div>
   <div class="process-grid">
     <div class="process-step reveal"><div class="step-num">01</div><div class="step-title">Choose Your Website</div><div class="step-desc">Browse our ready-made websites and pick the one that fits your business</div></div>
-    <div class="process-step reveal"><div class="step-num">02</div><div class="step-title">Complete Purchase</div><div class="step-desc">Secure payment via Stripe. Your spot is reserved instantly</div></div>
+    <div class="process-step reveal"><div class="step-num">02</div><div class="step-title">Complete Purchase</div><div class="step-desc">Secure payment via PayPal. Your spot is reserved instantly</div></div>
     <div class="process-step reveal"><div class="step-num">03</div><div class="step-title">We Deliver It</div><div class="step-desc">We customize and deploy your website within 48 hours</div></div>
     <div class="process-step reveal"><div class="step-num">04</div><div class="step-title">You Launch</div><div class="step-desc">Go live and start generating revenue immediately</div></div>
   </div>
@@ -378,25 +365,11 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2026 DreamDrive Studios · dreamdriveweb.com · All rights reserved</div>
-    <div class="footer-copy">🔒 Secure payments by Stripe</div>
+    <div class="footer-copy">🔒 Secure payments by PayPal</div>
   </div>
 </footer>
 
-</div>
-
-<!-- THANK YOU PAGE -->
-<div class="thankyou" id="thankYouPage">
-  <div class="thankyou-box">
-    <div class="thankyou-icon">🎉</div>
-    <div class="thankyou-title">Payment Successful!</div>
-    <div class="thankyou-text">Your website purchase is confirmed. Our team will contact you within 24 hours with all delivery details and next steps.<br><br>Check your email for your receipt.</div>
-    <p style="color:var(--gold);margin-bottom:32px;font-size:0.9em;">contact@dreamdriveweb.com</p>
-    <a href="#" onclick="showMain()" class="btn-gold">← Back to Home</a>
-  </div>
-</div>
-
 <script>
-// CURSOR
 const cursor=document.getElementById('cursor');
 const ring=document.getElementById('cursorRing');
 let mx=0,my=0,rx=0,ry=0;
@@ -407,18 +380,12 @@ document.querySelectorAll('a,button,.product-card,.testi-card,.proof-item,.proce
   el.addEventListener('mouseenter',()=>{cursor.style.transform='translate(-50%,-50%) scale(2)';ring.style.transform='translate(-50%,-50%) scale(1.5)';ring.style.borderColor='rgba(212,175,55,0.9)';});
   el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';ring.style.transform='translate(-50%,-50%) scale(1)';ring.style.borderColor='rgba(212,175,55,0.6)';});
 });
-
-// SCROLL PROGRESS
 window.addEventListener('scroll',()=>{
   const pct=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
   document.getElementById('scrollBar').style.width=pct+'%';
 });
-
-// SCROLL REVEAL
 const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.12});
 document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>observer.observe(el));
-
-// COUNTERS
 const counterObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
@@ -437,43 +404,6 @@ const counterObs=new IntersectionObserver(entries=>{
 },{threshold:0.5});
 const statsEl=document.querySelector('.stats');
 if(statsEl)counterObs.observe(statsEl);
-
-// STRIPE
-const stripe=Stripe('YOUR_STRIPE_PUBLIC_KEY');
-
-async function handleBuy(btn,product,price){
-  const originalText=btn.textContent;
-  btn.textContent='Processing...';
-  btn.classList.add('loading');
-  try{
-    const response=await fetch('/create-checkout-session',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({product,price})
-    });
-    const session=await response.json();
-    await stripe.redirectToCheckout({sessionId:session.id});
-  }catch(err){
-    alert('Payment error. Please try again.');
-    btn.textContent=originalText;
-    btn.classList.remove('loading');
-  }
-}
-
-function showThankYou(){
-  document.getElementById('mainSite').style.display='none';
-  document.getElementById('thankYouPage').classList.add('active');
-  window.scrollTo(0,0);
-}
-function showMain(){
-  document.getElementById('mainSite').style.display='block';
-  document.getElementById('thankYouPage').classList.remove('active');
-  window.scrollTo(0,0);
-  return false;
-}
-const urlParams=new URLSearchParams(window.location.search);
-if(urlParams.get('success')==='true')showThankYou();
 </script>
-
 </body>
 </html>
