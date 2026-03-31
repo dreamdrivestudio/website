@@ -21,6 +21,10 @@ nav{position:fixed;top:0;width:100%;background:rgba(11,11,11,0.95);backdrop-filt
 .nav-links a:hover{color:var(--gold);}
 .nav-btn{padding:10px 24px;background:var(--gold);color:#000!important;font-weight:700;border-radius:4px;font-size:0.82em!important;transition:all 0.2s!important;}
 .nav-btn:hover{background:#e8c84a;transform:translateY(-1px);box-shadow:0 6px 20px rgba(212,175,55,0.3);}
+.marquee-wrap{padding:14px 0;overflow:hidden;background:#000;border-top:1px solid rgba(212,175,55,0.2);border-bottom:1px solid rgba(212,175,55,0.2);}
+.marquee-track{display:flex;white-space:nowrap;animation:marquee 18s linear infinite;}
+.marquee-item{display:flex;align-items:center;gap:28px;padding:0 40px;font-size:0.82em;letter-spacing:0.12em;text-transform:uppercase;color:#fff;font-weight:500;}
+.marquee-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;}
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 40px 80px;position:relative;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at center top,rgba(212,175,55,0.08) 0%,transparent 60%),radial-gradient(ellipse at bottom right,rgba(212,175,55,0.04) 0%,transparent 50%);}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,0.03) 1px,transparent 1px);background-size:60px 60px;}
@@ -160,6 +164,7 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
 .reveal-right.visible{opacity:1;transform:translateX(0);}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 @media(max-width:900px){
   nav{padding:16px 24px;}
   .nav-links{display:none;}
@@ -179,7 +184,6 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
 </style>
 </head>
 <body>
-
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="scroll-bar" id="scrollBar"></div>
@@ -193,6 +197,19 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     <li><a href="#contact" class="nav-btn">Get Started</a></li>
   </ul>
 </nav>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
+  </div>
+</div>
 
 <section class="hero">
   <div class="hero-bg"></div>
