@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DreamDrive Studios – Websites Ready to Sell</title>
+<title>DreamDrive Studios – Websites That Bring You Clients</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -31,11 +31,11 @@ nav{position:fixed;top:0;width:100%;background:rgba(11,11,11,0.95);backdrop-filt
 .hero h1 span{color:var(--gold);}
 .hero p{font-size:1.15em;color:#888;max-width:560px;margin:0 auto 44px;line-height:1.8;animation:fadeUp 0.8s 0.4s ease both;}
 .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeUp 0.8s 0.6s ease both;}
-.btn-gold{padding:16px 36px;background:var(--gold);color:#000;font-weight:700;border-radius:4px;text-decoration:none;font-size:0.95em;transition:all 0.3s;position:relative;overflow:hidden;border:none;cursor:none;}
+.btn-gold{padding:16px 36px;background:var(--gold);color:#000;font-weight:700;border-radius:4px;text-decoration:none;font-size:0.95em;transition:all 0.3s;position:relative;overflow:hidden;border:none;cursor:none;display:inline-block;}
 .btn-gold::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent);transition:left 0.4s;}
 .btn-gold:hover::before{left:100%;}
 .btn-gold:hover{background:#e8c84a;transform:translateY(-2px);box-shadow:0 12px 32px rgba(212,175,55,0.35);}
-.btn-outline{padding:16px 36px;border:1px solid rgba(212,175,55,0.5);color:var(--gold);font-weight:600;border-radius:4px;text-decoration:none;font-size:0.95em;transition:all 0.3s;}
+.btn-outline{padding:16px 36px;border:1px solid rgba(212,175,55,0.5);color:var(--gold);font-weight:600;border-radius:4px;text-decoration:none;font-size:0.95em;transition:all 0.3s;display:inline-block;}
 .btn-outline:hover{background:rgba(212,175,55,0.08);border-color:var(--gold);transform:translateY(-2px);}
 .hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:#444;font-size:0.75em;letter-spacing:0.1em;text-transform:uppercase;animation:fadeUp 1s 1s ease both;}
 .scroll-dot{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);}
@@ -50,44 +50,62 @@ section{padding:100px 60px;}
 .section-title span{color:var(--gold);}
 .section-sub{color:#666;font-size:1em;line-height:1.8;max-width:560px;}
 .divider{width:48px;height:2px;background:var(--gold);margin:20px 0 48px;}
-.products{background:var(--dark);}
-.products-header{text-align:center;margin-bottom:64px;}
-.products-header .section-sub{margin:0 auto;}
-.urgency{display:inline-block;margin-top:20px;padding:8px 20px;background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.2);border-radius:4px;font-size:0.82em;color:var(--gold);}
-.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;max-width:1100px;margin:0 auto;}
-.product-card{background:var(--gray);border:1px solid rgba(255,255,255,0.06);border-radius:12px;overflow:hidden;transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);position:relative;}
-.product-card:hover{border-color:rgba(212,175,55,0.4);transform:translateY(-8px);box-shadow:0 24px 56px rgba(0,0,0,0.5),0 0 0 1px rgba(212,175,55,0.1);}
-.product-card.featured{border-color:rgba(212,175,55,0.3);}
-.product-badge{position:absolute;top:16px;right:16px;padding:4px 12px;background:var(--gold);color:#000;font-size:0.7em;font-weight:700;border-radius:20px;text-transform:uppercase;letter-spacing:0.06em;}
-.product-img{width:100%;height:200px;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);display:flex;align-items:center;justify-content:center;font-size:4em;}
-.product-body{padding:28px;}
-.product-category{font-size:0.72em;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:10px;}
-.product-title{font-family:'Playfair Display',serif;font-size:1.4em;font-weight:700;margin-bottom:12px;}
-.product-desc{font-size:0.88em;color:#666;line-height:1.7;margin-bottom:20px;}
-.product-features{list-style:none;margin-bottom:24px;}
-.product-features li{font-size:0.84em;color:#888;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:8px;}
-.product-features li::before{content:'✓';color:var(--gold);font-weight:700;}
-.product-footer{display:flex;align-items:center;justify-content:space-between;margin-top:8px;}
-.product-price{font-family:'Playfair Display',serif;font-size:2em;font-weight:900;color:var(--white);}
-.product-price span{font-size:0.5em;color:#666;font-family:'DM Sans',sans-serif;font-weight:400;}
-.buy-btn{padding:12px 24px;background:var(--gold);color:#000;font-weight:700;border:none;border-radius:4px;cursor:pointer;font-size:0.88em;transition:all 0.2s;text-decoration:none;display:inline-block;}
-.buy-btn:hover{background:#e8c84a;transform:translateY(-1px);box-shadow:0 8px 20px rgba(212,175,55,0.3);}
-.stripe-note{text-align:center;margin-top:12px;font-size:0.72em;color:#444;}
-.proof{background:var(--gray);text-align:center;}
+.packages{background:var(--dark);}
+.packages-header{text-align:center;margin-bottom:64px;}
+.packages-header .section-sub{margin:0 auto;}
+.packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto 80px;}
+.pkg-card{background:var(--gray);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:40px 32px;position:relative;transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);}
+.pkg-card:hover{transform:translateY(-8px);box-shadow:0 24px 56px rgba(0,0,0,0.5);}
+.pkg-card.featured{border-color:var(--gold);background:linear-gradient(135deg,#1a1a0a,#1a1a1a);}
+.pkg-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#000;padding:4px 20px;border-radius:20px;font-size:0.72em;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;}
+.pkg-dot{width:12px;height:12px;border-radius:50%;margin-bottom:24px;}
+.pkg-dot.green{background:#22c55e;}
+.pkg-dot.blue{background:#3b82f6;}
+.pkg-dot.red{background:#ef4444;}
+.pkg-name{font-family:'Playfair Display',serif;font-size:1.6em;font-weight:700;margin-bottom:8px;}
+.pkg-price{font-size:0.95em;color:var(--gold);font-weight:600;margin-bottom:24px;}
+.pkg-features{list-style:none;margin-bottom:28px;}
+.pkg-features li{font-size:0.88em;color:#888;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:10px;}
+.pkg-features li::before{content:'→';color:var(--gold);font-weight:700;flex-shrink:0;}
+.pkg-for{margin-top:20px;padding:16px;background:rgba(212,175,55,0.05);border-radius:8px;border:1px solid rgba(212,175,55,0.1);}
+.pkg-for-label{font-size:0.7em;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;font-weight:600;}
+.pkg-for-items{font-size:0.82em;color:#666;line-height:1.7;}
+.pkg-cta{margin-top:28px;display:block;text-align:center;padding:14px;background:transparent;border:1px solid rgba(212,175,55,0.4);color:var(--gold);border-radius:8px;text-decoration:none;font-size:0.88em;font-weight:600;transition:all 0.3s;}
+.pkg-card.featured .pkg-cta{background:var(--gold);color:#000;border-color:var(--gold);}
+.pkg-cta:hover{background:var(--gold);color:#000;border-color:var(--gold);}
+.upsell-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:800px;margin:0 auto;}
+.upsell-card{background:var(--gray);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:28px 32px;display:flex;align-items:flex-start;gap:16px;transition:all 0.3s;}
+.upsell-card:hover{border-color:rgba(212,175,55,0.3);transform:translateY(-4px);}
+.upsell-icon{font-size:1.8em;flex-shrink:0;}
+.upsell-title{font-weight:700;margin-bottom:6px;font-size:0.95em;}
+.upsell-price{color:var(--gold);font-size:0.82em;font-weight:600;margin-bottom:8px;}
+.upsell-desc{font-size:0.82em;color:#666;line-height:1.6;}
+.positioning{background:var(--gray);}
+.pos-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.pos-compare{display:flex;flex-direction:column;gap:16px;}
+.pos-item{padding:20px 24px;border-radius:10px;display:flex;align-items:flex-start;gap:14px;}
+.pos-bad{background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.15);}
+.pos-good{background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.15);}
+.pos-icon{font-size:1.2em;flex-shrink:0;margin-top:2px;}
+.pos-label{font-size:0.72em;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;font-weight:600;}
+.pos-bad .pos-label{color:#ef4444;}
+.pos-good .pos-label{color:#22c55e;}
+.pos-text{font-size:0.9em;color:#ccc;line-height:1.6;}
+.proof{background:var(--dark);text-align:center;}
 .proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:56px;}
-.proof-item{padding:40px 32px;background:var(--dark);border:1px solid rgba(255,255,255,0.05);border-radius:12px;transition:all 0.3s;}
+.proof-item{padding:40px 32px;background:var(--gray);border:1px solid rgba(255,255,255,0.05);border-radius:12px;transition:all 0.3s;}
 .proof-item:hover{border-color:rgba(212,175,55,0.2);transform:translateY(-4px);}
 .proof-icon{font-size:2.4em;margin-bottom:16px;}
 .proof-num{font-family:'Playfair Display',serif;font-size:2.4em;font-weight:900;color:var(--gold);margin-bottom:8px;}
 .proof-text{font-size:0.88em;color:#666;line-height:1.6;}
-.casestudy{background:var(--dark);}
+.casestudy{background:var(--gray);}
 .casestudy-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:56px;}
 .case-tag{display:inline-block;padding:4px 14px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.2);border-radius:20px;font-size:0.75em;color:var(--gold);margin-bottom:20px;}
 .case-title{font-family:'Playfair Display',serif;font-size:2em;font-weight:700;margin-bottom:20px;line-height:1.3;}
 .case-stats{display:flex;gap:32px;margin:32px 0;}
 .case-stat-num{font-family:'Playfair Display',serif;font-size:2em;font-weight:900;color:var(--gold);}
 .case-stat-label{font-size:0.8em;color:#666;margin-top:4px;}
-.case-visual{background:var(--gray);border:1px solid rgba(212,175,55,0.15);border-radius:12px;padding:32px;}
+.case-visual{background:var(--dark);border:1px solid rgba(212,175,55,0.15);border-radius:12px;padding:32px;}
 .before-after{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .ba-item{padding:20px;border-radius:8px;text-align:center;}
 .ba-before{background:rgba(255,255,255,0.03);}
@@ -95,25 +113,31 @@ section{padding:100px 60px;}
 .ba-label{font-size:0.7em;text-transform:uppercase;letter-spacing:0.1em;color:#555;margin-bottom:10px;}
 .ba-value{font-family:'Playfair Display',serif;font-size:1.6em;font-weight:700;}
 .ba-after .ba-value{color:var(--gold);}
-.testimonials{background:var(--gray);}
-.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:56px;}
-.testi-card{background:var(--dark);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:32px;transition:all 0.3s;position:relative;}
+.testimonials{background:var(--dark);}
+.testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:56px;}
+.testi-card{background:var(--gray);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:32px;transition:all 0.3s;position:relative;}
 .testi-card:hover{border-color:rgba(212,175,55,0.2);transform:translateY(-4px);}
 .testi-card::before{content:'"';font-family:'Playfair Display',serif;font-size:4em;color:rgba(212,175,55,0.15);position:absolute;top:16px;left:24px;line-height:1;}
 .testi-text{font-size:1em;color:#ccc;line-height:1.7;margin-bottom:24px;padding-top:20px;}
 .testi-author{display:flex;align-items:center;gap:12px;}
-.testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#e8c84a);display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:0.9em;flex-shrink:0;}
+.testi-avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(212,175,55,0.4);background:#1a1a1a;display:flex;align-items:center;justify-content:center;}
 .testi-name{font-weight:600;font-size:0.9em;}
 .testi-role{font-size:0.78em;color:#555;}
 .stars{color:var(--gold);font-size:0.85em;margin-bottom:16px;letter-spacing:2px;}
-.process{background:var(--dark);}
+.process{background:var(--gray);}
 .process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:56px;position:relative;}
 .process-grid::before{content:'';position:absolute;top:32px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,0.3),transparent);}
 .process-step{text-align:center;padding:0 24px;}
-.step-num{width:64px;height:64px;border-radius:50%;background:var(--gray);border:1px solid rgba(212,175,55,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Playfair Display',serif;font-size:1.2em;font-weight:700;color:var(--gold);transition:all 0.3s;}
+.step-num{width:64px;height:64px;border-radius:50%;background:var(--dark);border:1px solid rgba(212,175,55,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Playfair Display',serif;font-size:1.2em;font-weight:700;color:var(--gold);transition:all 0.3s;}
 .process-step:hover .step-num{background:var(--gold);color:#000;border-color:var(--gold);transform:scale(1.1);}
 .step-title{font-weight:700;font-size:1em;margin-bottom:8px;}
 .step-desc{font-size:0.84em;color:#555;line-height:1.6;}
+.goal-section{background:var(--dark);border-top:1px solid rgba(212,175,55,0.1);}
+.goal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px;}
+.goal-card{text-align:center;padding:40px 24px;background:rgba(212,175,55,0.03);border:1px solid rgba(212,175,55,0.1);border-radius:12px;transition:all 0.3s;}
+.goal-card:hover{background:rgba(212,175,55,0.06);border-color:rgba(212,175,55,0.25);transform:translateY(-4px);}
+.goal-num{font-family:'Playfair Display',serif;font-size:3em;font-weight:900;color:var(--gold);margin-bottom:8px;}
+.goal-label{font-size:0.88em;color:#888;line-height:1.6;}
 .cta-section{background:linear-gradient(135deg,#0f0f0f,#1a1600);border-top:1px solid rgba(212,175,55,0.15);border-bottom:1px solid rgba(212,175,55,0.15);text-align:center;padding:120px 60px;}
 .cta-section h2{font-family:'Playfair Display',serif;font-size:3em;font-weight:700;margin-bottom:20px;line-height:1.2;}
 .cta-section p{color:#666;font-size:1.05em;margin-bottom:44px;max-width:480px;margin-left:auto;margin-right:auto;}
@@ -136,12 +160,17 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
 .reveal-right.visible{opacity:1;transform:translateX(0);}
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
-@media(max-width:768px){
+@media(max-width:900px){
   nav{padding:16px 24px;}
   .nav-links{display:none;}
   section{padding:80px 24px;}
   .hero h1{font-size:2.4em;}
+  .packages-grid{grid-template-columns:1fr;}
   .casestudy-inner{grid-template-columns:1fr;}
+  .pos-inner{grid-template-columns:1fr;}
+  .goal-grid{grid-template-columns:1fr;}
+  .upsell-grid{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
   .stats-grid{gap:40px;}
   .process-grid::before{display:none;}
   footer{padding:40px 24px;}
@@ -158,7 +187,7 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
 <nav>
   <div class="nav-logo">Dream<span>Drive</span> Studios</div>
   <ul class="nav-links">
-    <li><a href="#products">Websites</a></li>
+    <li><a href="#packages">Packages</a></li>
     <li><a href="#proof">Results</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#contact" class="nav-btn">Get Started</a></li>
@@ -169,12 +198,12 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-badge">✦ Premium Digital Products</div>
-    <h1>Websites ready to<br><span>generate income.</span><br>Buy it. Launch it.</h1>
-    <p>We create ready-made websites optimized to sell. No waiting, no stress. Just results.</p>
+    <div class="hero-badge">✦ Client-Generating Websites</div>
+    <h1>We don't build websites.<br>We build <span>client machines.</span></h1>
+    <p>We build websites that bring you clients. Delivered in 5–7 days. Modern design guaranteed.</p>
     <div class="hero-btns">
-      <a href="#products" class="btn-gold">View Available Websites</a>
-      <a href="#contact" class="btn-outline">Request Custom Website</a>
+      <a href="#packages" class="btn-gold">View Packages</a>
+      <a href="#contact" class="btn-outline">Get a Free Quote</a>
     </div>
   </div>
   <div class="hero-scroll"><div class="scroll-dot"></div>Scroll</div>
@@ -184,91 +213,151 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   <div class="stats-grid">
     <div class="stat-item"><div class="stat-num" data-count="100">0</div><div class="stat-label">Websites Created</div></div>
     <div class="stat-item"><div class="stat-num" data-count="98">0</div><div class="stat-label">% Client Satisfaction</div></div>
-    <div class="stat-item"><div class="stat-num" data-count="48">0</div><div class="stat-label">Hour Delivery</div></div>
+    <div class="stat-item"><div class="stat-num" data-count="7">0</div><div class="stat-label">Day Max Delivery</div></div>
     <div class="stat-item"><div class="stat-num" data-count="5">0</div><div class="stat-label">Countries Served</div></div>
   </div>
 </div>
 
-<section class="products" id="products">
-  <div class="products-header reveal">
-    <div class="section-label">Available Now</div>
-    <h2 class="section-title">Ready-Made <span>Websites</span></h2>
+<section class="packages" id="packages">
+  <div class="packages-header reveal">
+    <div class="section-label">Our Offer</div>
+    <h2 class="section-title">Simple, Transparent <span>Packages</span></h2>
     <div class="divider" style="margin:20px auto;"></div>
-    <p class="section-sub">Each website is fully built, optimized for conversions, and ready to deploy in 48 hours.</p>
-    <div class="urgency">⚠️ Limited availability — only 3 spots left this week</div>
+    <p class="section-sub">No hidden fees. No complicated process. Just results delivered in 5–7 days.</p>
   </div>
-  <div class="products-grid">
-    <div class="product-card featured reveal">
-      <div class="product-badge">Best Seller</div>
-      <div class="product-img">🏋️</div>
-      <div class="product-body">
-        <div class="product-category">E-Commerce</div>
-        <div class="product-title">Shopify Fitness Store</div>
-        <div class="product-desc">Premium e-commerce store with products, mobile optimized, and ready to sell from day one.</div>
-        <ul class="product-features">
-          <li>Ready to launch immediately</li>
-          <li>Conversion optimized layout</li>
-          <li>Mobile friendly & fast</li>
-          <li>Product pages included</li>
-        </ul>
-        <div class="product-footer">
-          <div class="product-price">$499<span> one-time</span></div>
-          <a class="buy-btn" href="https://www.paypal.com/paypalme/dreamdriveweb/499" target="_blank">Buy Now</a>
-        </div>
-        <div class="stripe-note">🔒 Secure payment powered by PayPal</div>
+  <div class="packages-grid">
+    <div class="pkg-card reveal">
+      <div class="pkg-dot green"></div>
+      <div class="pkg-name">Starter</div>
+      <div class="pkg-price">$500 – $900 one-time</div>
+      <ul class="pkg-features">
+        <li>1 landing page</li>
+        <li>Modern premium design</li>
+        <li>Mobile optimized</li>
+        <li>Contact / booking button</li>
+        <li>Delivered in 5 days</li>
+        <li>Revisions included</li>
+      </ul>
+      <div class="pkg-for">
+        <div class="pkg-for-label">Perfect for</div>
+        <div class="pkg-for-items">Small businesses · Beginners · Local shops</div>
+      </div>
+      <a href="https://www.paypal.com/paypalme/dreamdriveweb" target="_blank" class="pkg-cta">Get Started →</a>
+    </div>
+    <div class="pkg-card featured reveal">
+      <div class="pkg-badge">⭐ Most Popular</div>
+      <div class="pkg-dot blue"></div>
+      <div class="pkg-name">Growth</div>
+      <div class="pkg-price">$1,000 – $2,000 one-time</div>
+      <ul class="pkg-features">
+        <li>3–5 pages (Home, Services, Contact…)</li>
+        <li>Design optimized to sell</li>
+        <li>Copywriting that converts</li>
+        <li>Mobile + speed optimized</li>
+        <li>Delivered in 7 days</li>
+        <li>Revisions included</li>
+      </ul>
+      <div class="pkg-for">
+        <div class="pkg-for-label">Perfect for</div>
+        <div class="pkg-for-items">SMBs · Coaches · Local services · Freelancers</div>
+      </div>
+      <a href="https://www.paypal.com/paypalme/dreamdriveweb" target="_blank" class="pkg-cta">Get Started →</a>
+    </div>
+    <div class="pkg-card reveal">
+      <div class="pkg-dot red"></div>
+      <div class="pkg-name">Premium</div>
+      <div class="pkg-price">$2,500 – $5,000 one-time</div>
+      <ul class="pkg-features">
+        <li>Full website + strategy</li>
+        <li>Sales-optimized copywriting</li>
+        <li>Lead capture funnel</li>
+        <li>Branding + advanced structure</li>
+        <li>Priority delivery in 7 days</li>
+        <li>Unlimited revisions</li>
+      </ul>
+      <div class="pkg-for">
+        <div class="pkg-for-label">Perfect for</div>
+        <div class="pkg-for-items">Serious businesses · E-commerce · Agencies</div>
+      </div>
+      <a href="https://www.paypal.com/paypalme/dreamdriveweb" target="_blank" class="pkg-cta">Get Started →</a>
+    </div>
+  </div>
+  <div class="reveal" style="text-align:center;margin-bottom:40px;">
+    <div class="section-label">Add-Ons</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.8em;font-weight:700;margin-bottom:8px;">Boost Your Results <span style="color:var(--gold)">Even Further</span></h3>
+  </div>
+  <div class="upsell-grid reveal">
+    <div class="upsell-card">
+      <div class="upsell-icon">🔍</div>
+      <div>
+        <div class="upsell-title">SEO + Google Setup</div>
+        <div class="upsell-price">+$200 – $500</div>
+        <div class="upsell-desc">Basic SEO, Google My Business setup, and local search visibility to get found faster.</div>
       </div>
     </div>
-    <div class="product-card reveal">
-      <div class="product-img">🍽️</div>
-      <div class="product-body">
-        <div class="product-category">Local Business</div>
-        <div class="product-title">Restaurant Website</div>
-        <div class="product-desc">Menu, booking, map integration — perfect for local restaurants and food businesses.</div>
-        <ul class="product-features">
-          <li>Online menu & booking</li>
-          <li>Google Maps integrated</li>
-          <li>Fast setup in 24h</li>
-          <li>Easy to manage</li>
-        </ul>
-        <div class="product-footer">
-          <div class="product-price">$299<span> one-time</span></div>
-          <a class="buy-btn" href="https://www.paypal.com/paypalme/dreamdriveweb/299" target="_blank">Buy Now</a>
-        </div>
-        <div class="stripe-note">🔒 Secure payment powered by PayPal</div>
+    <div class="upsell-card">
+      <div class="upsell-icon">🎨</div>
+      <div>
+        <div class="upsell-title">Content Creation</div>
+        <div class="upsell-price">+$300 – $800</div>
+        <div class="upsell-desc">Professional visuals, graphics, and video content to elevate your brand online.</div>
       </div>
     </div>
-    <div class="product-card reveal">
-      <div class="product-img">💼</div>
-      <div class="product-body">
-        <div class="product-category">Professional</div>
-        <div class="product-title">Business / Service Website</div>
-        <div class="product-desc">Perfect for coaches, freelancers, and agencies looking to generate leads online.</div>
-        <ul class="product-features">
-          <li>Lead generation optimized</li>
-          <li>Clean premium design</li>
-          <li>Contact forms included</li>
-          <li>SEO ready</li>
-        </ul>
-        <div class="product-footer">
-          <div class="product-price">$349<span> one-time</span></div>
-          <a class="buy-btn" href="https://www.paypal.com/paypalme/dreamdriveweb/349" target="_blank">Buy Now</a>
+  </div>
+</section>
+
+<section class="positioning reveal">
+  <div class="pos-inner">
+    <div>
+      <div class="section-label">Our Philosophy</div>
+      <h2 class="section-title">We sell <span>clients,</span><br>not websites.</h2>
+      <div class="divider"></div>
+      <p style="color:#666;line-height:1.9;font-size:0.95em;margin-bottom:20px;">Most agencies build pretty websites that look great but bring zero clients. We build websites with one goal: turn your visitors into paying customers.</p>
+      <p style="color:#666;line-height:1.9;font-size:0.95em;">Simple = sells better. No complicated jargon, no hidden fees, no surprises.</p>
+    </div>
+    <div class="pos-compare">
+      <div class="pos-item pos-bad">
+        <div class="pos-icon">❌</div>
+        <div>
+          <div class="pos-label">What others say</div>
+          <div class="pos-text">"We make websites."</div>
         </div>
-        <div class="stripe-note">🔒 Secure payment powered by PayPal</div>
+      </div>
+      <div class="pos-item pos-good">
+        <div class="pos-icon">✅</div>
+        <div>
+          <div class="pos-label">What we do</div>
+          <div class="pos-text">"We help you get more clients through your website."</div>
+        </div>
+      </div>
+      <div class="pos-item pos-bad">
+        <div class="pos-icon">❌</div>
+        <div>
+          <div class="pos-label">Generic agency</div>
+          <div class="pos-text">Beautiful design. Zero strategy. No results.</div>
+        </div>
+      </div>
+      <div class="pos-item pos-good">
+        <div class="pos-icon">✅</div>
+        <div>
+          <div class="pos-label">DreamDrive Studios</div>
+          <div class="pos-text">Design + copywriting + strategy = more clients for you.</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <section class="proof" id="proof">
-  <div class="reveal" style="text-align:center;">
+  <div class="reveal">
     <div class="section-label">Why Choose Us</div>
-    <h2 class="section-title">Built to <span>Sell</span>,<br>Not Just Look Good</h2>
+    <h2 class="section-title">Built to <span>Convert,</span><br>Not Just Look Good</h2>
     <div class="divider" style="margin:20px auto;"></div>
   </div>
   <div class="proof-grid">
-    <div class="proof-item reveal"><div class="proof-icon">🚀</div><div class="proof-num">100+</div><div class="proof-text">Websites created and launched for entrepreneurs worldwide</div></div>
+    <div class="proof-item reveal"><div class="proof-icon">🚀</div><div class="proof-num">100+</div><div class="proof-text">Websites launched for entrepreneurs worldwide</div></div>
     <div class="proof-item reveal"><div class="proof-icon">⭐</div><div class="proof-num">98%</div><div class="proof-text">Client satisfaction rate across all delivered projects</div></div>
-    <div class="proof-item reveal"><div class="proof-icon">💰</div><div class="proof-num">48h</div><div class="proof-text">Average delivery time from purchase to live website</div></div>
+    <div class="proof-item reveal"><div class="proof-icon">⚡</div><div class="proof-num">5–7</div><div class="proof-text">Days average delivery — fast, reliable, guaranteed</div></div>
   </div>
 </section>
 
@@ -278,13 +367,13 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     <div class="reveal-left">
       <div class="case-tag">✦ Real Results</div>
       <div class="case-title">Maison Dorée –<br>Jewelry Brand</div>
-      <p style="color:#666;font-size:0.95em;line-height:1.8;margin-bottom:24px;">We built a premium e-commerce website for Maison Dorée in less than 48 hours. The results speak for themselves.</p>
+      <p style="color:#666;font-size:0.95em;line-height:1.8;margin-bottom:24px;">Zero online presence. Zero clients online. We built their full website in under 48 hours. The results were immediate and lasted.</p>
       <div class="case-stats">
         <div><div class="case-stat-num">48h</div><div class="case-stat-label">Launch Time</div></div>
         <div><div class="case-stat-num">+340%</div><div class="case-stat-label">Sales in 3 Months</div></div>
         <div><div class="case-stat-num">4.9★</div><div class="case-stat-label">Client Rating</div></div>
       </div>
-      <a href="#products" class="btn-gold">Get the Same Results</a>
+      <a href="#packages" class="btn-gold">Get the Same Results</a>
     </div>
     <div class="case-visual reveal-right">
       <p style="font-size:0.78em;color:#444;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:20px;">Before / After</p>
@@ -297,7 +386,6 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     </div>
   </div>
 </section>
-
 <section class="testimonials">
   <div class="reveal" style="text-align:center;">
     <div class="section-label">Testimonials</div>
@@ -307,18 +395,43 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   <div class="testi-grid">
     <div class="testi-card reveal">
       <div class="stars">★★★★★</div>
-      <div class="testi-text">I started selling in 2 days. The website was already set up perfectly. I just had to launch and the orders started coming in. Incredible service.</div>
-      <div class="testi-author"><div class="testi-avatar">SK</div><div><div class="testi-name">Sarah K.</div><div class="testi-role">Fitness Coach</div></div></div>
+      <div class="testi-text">I started getting clients in 2 days. The website was set up perfectly. I just launched and the leads started coming in. Incredible service.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" fill="#2a1a2e"/><circle cx="26" cy="20" r="10" fill="#D4AF37" opacity="0.9"/><ellipse cx="26" cy="42" rx="16" ry="12" fill="#D4AF37" opacity="0.7"/><text x="26" y="24" text-anchor="middle" font-size="11" font-weight="700" fill="#000" font-family="serif">SK</text></svg>
+        </div>
+        <div><div class="testi-name">Sarah K.</div><div class="testi-role">Fitness Coach · Toronto</div></div>
+      </div>
     </div>
     <div class="testi-card reveal">
       <div class="stars">★★★★★</div>
-      <div class="testi-text">Simple, fast, effective. I was skeptical but the quality blew me away. My restaurant bookings increased by 60% in the first month.</div>
-      <div class="testi-author"><div class="testi-avatar">MC</div><div><div class="testi-name">Marc C.</div><div class="testi-role">Restaurant Owner</div></div></div>
+      <div class="testi-text">Simple, fast, effective. My restaurant bookings increased by 60% in the first month. They really know how to build sites that convert.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" fill="#1a1a0d"/><circle cx="26" cy="20" r="10" fill="#c8a84b" opacity="0.9"/><ellipse cx="26" cy="42" rx="16" ry="12" fill="#c8a84b" opacity="0.7"/><text x="26" y="24" text-anchor="middle" font-size="11" font-weight="700" fill="#000" font-family="serif">MC</text></svg>
+        </div>
+        <div><div class="testi-name">Marc C.</div><div class="testi-role">Restaurant Owner · Montréal</div></div>
+      </div>
     </div>
     <div class="testi-card reveal">
       <div class="stars">★★★★★</div>
-      <div class="testi-text">Perfect to launch quickly. I needed a professional website for my agency and DreamDrive Studios delivered exactly what I needed, on time.</div>
-      <div class="testi-author"><div class="testi-avatar">AL</div><div><div class="testi-name">Aisha L.</div><div class="testi-role">Digital Agency</div></div></div>
+      <div class="testi-text">Perfect to launch quickly. I needed a professional website and DreamDrive Studios delivered exactly what I needed, on time, no stress.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" fill="#0d1a1a"/><circle cx="26" cy="20" r="10" fill="#D4AF37" opacity="0.9"/><ellipse cx="26" cy="42" rx="16" ry="12" fill="#D4AF37" opacity="0.7"/><text x="26" y="24" text-anchor="middle" font-size="11" font-weight="700" fill="#000" font-family="serif">AL</text></svg>
+        </div>
+        <div><div class="testi-name">Aisha L.</div><div class="testi-role">Digital Agency · Miami</div></div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <div class="testi-text">We had zero online presence. DreamDrive Studios built our full jewelry store in 48 hours. In 3 months, our revenue more than tripled. Best investment we've ever made.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <svg viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" fill="#1a1500"/><circle cx="26" cy="20" r="10" fill="#D4AF37" opacity="0.9"/><ellipse cx="26" cy="42" rx="16" ry="12" fill="#D4AF37" opacity="0.7"/><text x="26" y="24" text-anchor="middle" font-size="11" font-weight="700" fill="#000" font-family="serif">SM</text></svg>
+        </div>
+        <div><div class="testi-name">Sophie M.</div><div class="testi-role">Founder · Maison Dorée Jewelry, Québec</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -330,22 +443,46 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     <div class="divider" style="margin:20px auto;"></div>
   </div>
   <div class="process-grid">
-    <div class="process-step reveal"><div class="step-num">01</div><div class="step-title">Choose Your Website</div><div class="step-desc">Browse our ready-made websites and pick the one that fits your business</div></div>
-    <div class="process-step reveal"><div class="step-num">02</div><div class="step-title">Complete Purchase</div><div class="step-desc">Secure payment via PayPal. Your spot is reserved instantly</div></div>
-    <div class="process-step reveal"><div class="step-num">03</div><div class="step-title">We Deliver It</div><div class="step-desc">We customize and deploy your website within 48 hours</div></div>
-    <div class="process-step reveal"><div class="step-num">04</div><div class="step-title">You Launch</div><div class="step-desc">Go live and start generating revenue immediately</div></div>
+    <div class="process-step reveal"><div class="step-num">01</div><div class="step-title">Free Consultation</div><div class="step-desc">We discuss your business, goals, and budget. Honest advice, no pressure.</div></div>
+    <div class="process-step reveal"><div class="step-num">02</div><div class="step-title">You Approve Design</div><div class="step-desc">See the mockup before we build. No surprises — you know exactly what you get.</div></div>
+    <div class="process-step reveal"><div class="step-num">03</div><div class="step-title">We Build It</div><div class="step-desc">Delivered in 5–7 days. Revisions included. Clear communication throughout.</div></div>
+    <div class="process-step reveal"><div class="step-num">04</div><div class="step-title">You Get Clients</div><div class="step-desc">We launch your site and you start attracting clients immediately.</div></div>
+  </div>
+</section>
+
+<section class="goal-section">
+  <div class="reveal" style="text-align:center;">
+    <div class="section-label">Your Potential</div>
+    <h2 class="section-title">Realistic <span>Goals</span></h2>
+    <div class="divider" style="margin:20px auto;"></div>
+    <p style="color:#666;max-width:500px;margin:0 auto;">Start simple. Close your first clients. Scale from there.</p>
+  </div>
+  <div class="goal-grid">
+    <div class="goal-card reveal">
+      <div class="goal-num">$3,000</div>
+      <div class="goal-label">3 clients at $1,000 each<br><span style="color:var(--gold);">Realistic first month</span></div>
+    </div>
+    <div class="goal-card reveal">
+      <div class="goal-num">$5,000</div>
+      <div class="goal-label">5 clients at $1,000 each<br><span style="color:var(--gold);">Month 2–3 target</span></div>
+    </div>
+    <div class="goal-card reveal">
+      <div class="goal-num">$10K+</div>
+      <div class="goal-label">Premium packages + upsells<br><span style="color:var(--gold);">After building your reputation</span></div>
+    </div>
   </div>
 </section>
 
 <section class="cta-section" id="contact">
   <div class="reveal">
     <div class="section-label">Get Started Today</div>
-    <h2>Ready to launch your<br><span style="color:var(--gold)">website today?</span></h2>
+    <h2>Ready to get your<br><span style="color:var(--gold)">first clients?</span></h2>
     <p>Join 100+ entrepreneurs who launched with DreamDrive Studios. Limited spots available each week.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="#products" class="btn-gold">View Available Websites</a>
+      <a href="#packages" class="btn-gold">View Packages</a>
       <a href="mailto:contact@dreamdriveweb.com" class="btn-outline">Contact Us</a>
     </div>
+    <p style="margin-top:24px;font-size:0.78em;color:#444;">✓ Delivery in 5–7 days &nbsp;·&nbsp; ✓ Revisions included &nbsp;·&nbsp; ✓ Modern design guaranteed</p>
   </div>
 </section>
 
@@ -353,11 +490,11 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   <div class="footer-inner">
     <div>
       <div class="footer-brand">Dream<span>Drive</span> Studios</div>
-      <div class="footer-tagline">Websites ready to sell</div>
+      <div class="footer-tagline">Websites that bring you clients</div>
       <div class="footer-email">contact@dreamdriveweb.com</div>
     </div>
     <ul class="footer-links">
-      <li><a href="#products">Websites</a></li>
+      <li><a href="#packages">Packages</a></li>
       <li><a href="#proof">Results</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="mailto:contact@dreamdriveweb.com">Contact</a></li>
@@ -376,7 +513,7 @@ let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px';});
 function animRing(){rx+=(mx-rx)*0.15;ry+=(my-ry)*0.15;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing);}
 animRing();
-document.querySelectorAll('a,button,.product-card,.testi-card,.proof-item,.process-step').forEach(el=>{
+document.querySelectorAll('a,button,.pkg-card,.testi-card,.proof-item,.process-step,.goal-card,.upsell-card').forEach(el=>{
   el.addEventListener('mouseenter',()=>{cursor.style.transform='translate(-50%,-50%) scale(2)';ring.style.transform='translate(-50%,-50%) scale(1.5)';ring.style.borderColor='rgba(212,175,55,0.9)';});
   el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';ring.style.transform='translate(-50%,-50%) scale(1)';ring.style.borderColor='rgba(212,175,55,0.6)';});
 });
@@ -395,7 +532,7 @@ const counterObs=new IntersectionObserver(entries=>{
         const interval=setInterval(()=>{
           count+=step;
           if(count>=target){count=target;clearInterval(interval);}
-          el.textContent=Math.floor(count)+(target===98?'%':target===100?'+':target===48?'h':'x');
+          el.textContent=Math.floor(count)+(target===98?'%':target===100?'+':'');
         },25);
       });
       counterObs.disconnect();
