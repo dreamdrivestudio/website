@@ -21,10 +21,6 @@ nav{position:fixed;top:0;width:100%;background:rgba(11,11,11,0.95);backdrop-filt
 .nav-links a:hover{color:var(--gold);}
 .nav-btn{padding:10px 24px;background:var(--gold);color:#000!important;font-weight:700;border-radius:4px;font-size:0.82em!important;transition:all 0.2s!important;}
 .nav-btn:hover{background:#e8c84a;transform:translateY(-1px);box-shadow:0 6px 20px rgba(212,175,55,0.3);}
-.marquee-wrap{padding:14px 0;overflow:hidden;background:#000;border-top:1px solid rgba(212,175,55,0.2);border-bottom:1px solid rgba(212,175,55,0.2);}
-.marquee-track{display:flex;white-space:nowrap;animation:marquee 18s linear infinite;}
-.marquee-item{display:flex;align-items:center;gap:28px;padding:0 40px;font-size:0.82em;letter-spacing:0.12em;text-transform:uppercase;color:#fff;font-weight:500;}
-.marquee-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;}
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 40px 80px;position:relative;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at center top,rgba(212,175,55,0.08) 0%,transparent 60%),radial-gradient(ellipse at bottom right,rgba(212,175,55,0.04) 0%,transparent 50%);}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,0.03) 1px,transparent 1px);background-size:60px 60px;}
@@ -48,6 +44,10 @@ nav{position:fixed;top:0;width:100%;background:rgba(11,11,11,0.95);backdrop-filt
 .stat-item{text-align:center;}
 .stat-num{font-family:'Playfair Display',serif;font-size:2.8em;font-weight:900;color:var(--gold);}
 .stat-label{font-size:0.82em;color:#666;margin-top:4px;text-transform:uppercase;letter-spacing:0.08em;}
+.marquee-wrap{padding:16px 0;overflow:hidden;background:#000;border-top:1px solid rgba(212,175,55,0.2);border-bottom:1px solid rgba(212,175,55,0.2);}
+.marquee-track{display:flex;white-space:nowrap;animation:marquee 30s linear infinite;}
+.marquee-item{display:flex;align-items:center;gap:32px;padding:0 48px;font-size:0.82em;letter-spacing:0.14em;text-transform:uppercase;color:#fff;font-weight:500;}
+.marquee-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;}
 section{padding:100px 60px;}
 .section-label{font-size:0.72em;color:var(--gold);text-transform:uppercase;letter-spacing:0.18em;font-weight:600;margin-bottom:14px;}
 .section-title{font-family:'Playfair Display',serif;font-size:2.8em;font-weight:700;margin-bottom:20px;line-height:1.2;}
@@ -198,19 +198,6 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
   </ul>
 </nav>
 
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn visitors into clients</div>
-    <div class="marquee-item"><span class="marquee-dot"></span>Turn clicks into revenue</div>
-  </div>
-</div>
-
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -232,6 +219,17 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     <div class="stat-item"><div class="stat-num" data-count="98">0</div><div class="stat-label">% Client Satisfaction</div></div>
     <div class="stat-item"><div class="stat-num" data-count="7">0</div><div class="stat-label">Day Max Delivery</div></div>
     <div class="stat-item"><div class="stat-num" data-count="5">0</div><div class="stat-label">Countries Served</div></div>
+  </div>
+</div>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item"><span class="marquee-dot"></span>High-converting websites for serious businesses</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>High-converting websites for serious businesses</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>High-converting websites for serious businesses</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>High-converting websites for serious businesses</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>High-converting websites for serious businesses</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>High-converting websites for serious businesses</div>
   </div>
 </div>
 
@@ -495,11 +493,12 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     <div class="section-label">Get Started Today</div>
     <h2>Ready to get your<br><span style="color:var(--gold)">first clients?</span></h2>
     <p>Join 100+ entrepreneurs who launched with DreamDrive Studios. Limited spots available each week.</p>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;">
       <a href="#packages" class="btn-gold">View Packages</a>
       <a href="mailto:contact@dreamdriveweb.com" class="btn-outline">Contact Us</a>
     </div>
-    <p style="margin-top:24px;font-size:0.78em;color:#444;">✓ Delivery in 5–7 days &nbsp;·&nbsp; ✓ Revisions included &nbsp;·&nbsp; ✓ Modern design guaranteed</p>
+    <p style="font-size:0.95em;color:var(--gold);margin-bottom:8px;">🌐 <a href="https://dreamdriveweb.com" style="color:var(--gold);text-decoration:none;font-weight:600;">dreamdriveweb.com</a></p>
+    <p style="font-size:0.78em;color:#444;">✓ Delivery in 5–7 days &nbsp;·&nbsp; ✓ Revisions included &nbsp;·&nbsp; ✓ Modern design guaranteed</p>
   </div>
 </section>
 
@@ -508,7 +507,7 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     <div>
       <div class="footer-brand">Dream<span>Drive</span> Studios</div>
       <div class="footer-tagline">Websites that bring you clients</div>
-      <div class="footer-email">contact@dreamdriveweb.com</div>
+      <div class="footer-email"><a href="mailto:contact@dreamdriveweb.com" style="color:var(--gold);text-decoration:none;">contact@dreamdriveweb.com</a></div>
     </div>
     <ul class="footer-links">
       <li><a href="#packages">Packages</a></li>
@@ -518,7 +517,7 @@ footer{background:#050505;padding:60px;border-top:1px solid rgba(255,255,255,0.0
     </ul>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2026 DreamDrive Studios · dreamdriveweb.com · All rights reserved</div>
+    <div class="footer-copy">© 2026 DreamDrive Studios · <a href="https://dreamdriveweb.com" style="color:var(--gold);text-decoration:none;">dreamdriveweb.com</a> · All rights reserved</div>
     <div class="footer-copy">🔒 Secure payments by PayPal</div>
   </div>
 </footer>
